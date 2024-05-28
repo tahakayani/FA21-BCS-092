@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Members</title>
+    <link rel="stylesheet" href="members.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/members.html">Members</a>
+            <a href="/contact-us.html">Contact Us</a>
+            <a href="/about-us.html">About Us</a>
+            <a href="/login-page.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Gym Members</h2>
+        <form id="search-form">
+            <input type="text" id="search-query" name="search" placeholder="Search members by name...">
+            <button type="submit">Search</button>
+        </form>
+        <a href="/members-forms">Add New Member</a>
+        <div id="search-history">
+            <h3>Search History</h3>
+            <ul id="history-list"></ul>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="members-table-body">
+            </tbody>
+        </table>
+        <div id="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="page-number"></span>
+            <button id="next-page">Next</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Management</p>
+    </footer>
+    <script src="search.js"></script>
+</body>
+</html>
