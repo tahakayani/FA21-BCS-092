@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Form</title>
+    <link rel="stylesheet" href="members.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/members">Members</a>
+            <a href="/contact-us">Contact Us</a>
+            <a href="/about-us">About Us</a>
+            <a href="/login-page">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="form-title">Add New Member</h2>
+        <form id="member-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="membershipStatus">Status</label>
+            <select id="membershipStatus" name="membershipStatus" required>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+
+            <button type="submit">Add Member</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Management</p>
+    </footer>
+    <script src="members.js"></script>
+</body>
+</html>
